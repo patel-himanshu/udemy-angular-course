@@ -1,0 +1,21 @@
+<p>Success</p>
+
+<hr style="border-width: 10px;">
+
+<label>Username</label>
+<input type = "text" class = "form-control" [(ngModel)] = "username">
+
+<h6>{{ username }}</h6>
+
+<button class = "btn btn-primary" [disabled] = "!username" (click) = "resetUsername()">Reset Username</button>
+
+<hr style="border-width: 10px;">
+
+<button class = "btn btn-primary" (click) = "onClickDisplayDetails()">Display Details</button>
+<h6 *ngIf = "displayDetails">Password = fsociety</h6>
+
+<br style = "margin: 5px;">
+
+Logs: <h5 *ngFor = "let log of logs; let i = index" 
+            [ngStyle] = "{'background-color': i > 4 ? 'blue' : 'white'}" 
+            [ngClass] = "{'white-text' : i > 4}">{{ log }}</h5>
