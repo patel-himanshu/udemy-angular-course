@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Intro": {
+    "Comp-Databinding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-Intro",
+            "outputPath": "dist/Comp-Databinding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Intro:build"
+            "browserTarget": "Comp-Databinding:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Intro:build:production"
+              "browserTarget": "Comp-Databinding:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Intro:build"
+            "browserTarget": "Comp-Databinding:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Intro:serve"
+            "devServerTarget": "Comp-Databinding:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Intro:serve:production"
+              "devServerTarget": "Comp-Databinding:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Angular-Intro"
+  "defaultProject": "Comp-Databinding"
 }
