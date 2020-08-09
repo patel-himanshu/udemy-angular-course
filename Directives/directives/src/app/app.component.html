@@ -18,6 +18,22 @@
         </div>
       </ul>
       <p appBasicHighlight>Styled with Basic Highlight Directive</p>
+      <p appBetterHighlight [defaultColor]="'lightgreen'">Styled with Better Highlight Directive</p> 
+      <!-- Notice that lightgreen is again within quotation marks -->
+      <div *appUnless="!onlyOdd">
+        <li
+          class="list-group-item" *ngFor="let even of evenNumbers"> {{ even }}
+        </li>
+      </div>
+      
+      <hr>
+
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="1">Value = 1</p>
+        <p *ngSwitchCase="2">Value = 2</p>
+        <p *ngSwitchCase="3">Value = 3</p>
+        <p *ngSwitchDefault>Value = Default</p>
+      </div>
     </div>
   </div>
 </div>
