@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Recipe-Book';
-  currOption: string = 'recipes'; 
-
-  onNavigate(option: string) {
-    this.currOption = option;  
-  }
 }
